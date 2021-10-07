@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorCycle Project</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__copy">JS ColorCycle Project</h1>
+  </header>
+  <main class="content">
+    <form>
+      <div>
+        <label class="label label--center" for="primary">Hexadecimal Color:</label>
+        <input class="field field--center" type="text" name="primaryInput" placeholder="#FFFFFF" />
+      </div>
+      <div class="colorFields">
+        <div class="color__field">
+          <label class="label label--center" for="red">Red:</label>
+          <input class="field field--small field--text-center field--center" type="text" name="redInput" disabled />
+          <div class="color__field__rate">
+            <i class="arrow arrow--left" data-operate="decrease" data-color="red"></i>
+            <span id="redRate" class="rate">1</span>x
+            <i class="arrow arrow--right" data-operate="increase" data-color="red"></i>
+          </div>
+        </div>
+        <div class="color__field">
+          <label class="label label--center" for="blue">Blue:</label>
+          <input class="field field--small field--text-center field--center" type="text" name="blueInput" disabled />
+          <div class="color__field__rate">
+            <i class="arrow arrow--left" data-operate="decrease" data-color="blue"></i>
+            <span id="blueRate" class="rate">1</span>x
+            <i class="arrow arrow--right" data-operate="increase" data-color="blue"></i>
+          </div>
+        </div>
+        <div class="color__field">
+          <label class="label label--center" for="green">Green:</label>
+          <input class="field field--small field--text-center field--center" type="text" name="greenInput" disabled />
+          <div class="color__field__rate">
+            <i class="arrow arrow--left" data-operate="decrease" data-color="green"></i>
+            <span id="greenRate" class="rate">1</span>x
+            <i class="arrow arrow--right" data-operate="increase" data-color="green"></i>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="github">
+    <img src="./github-logo.png" />
+    <a href="https://github.com/AmishBaztard/ColorCycle"
+      class="github__link">https://github.com/AmishBaztard/ColorCycle</a>
+  </footer>
+  <script src="./script.js" type="module"></script>
+</body>
+</html>
