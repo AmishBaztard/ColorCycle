@@ -1,4 +1,4 @@
-# Calculator
+# Color Cycle
 
 This is my version of the project:
 
