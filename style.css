@@ -72,6 +72,20 @@ body {
 .arrow:hover {
   border-color: #555;
 }
+.action {
+  margin: 3rem 0 0 0;
+}
+.button {
+  display: block;
+  background: #00D671;
+  border: none;
+  font-size: 1.8rem;
+  padding: 1.25rem 4.5rem;
+  cursor: pointer;
+}
+.button:hover {
+  background: #42DD95;
+}
 
 /* Block Elements */
 .header__copy {
@@ -122,4 +136,13 @@ body {
   -webkit-transform: rotate(-45deg);
 
   margin: 0 0 0 0.25rem;
+}
+.button--center {
+  margin: 0 auto;
+}
+.button--red {
+  background: #EB3F4D;
+}
+.button--red:hover {
+  background: #9E1B26;
 }

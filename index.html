@@ -12,10 +12,10 @@
     <h1 class="header__copy">JS ColorCycle Project</h1>
   </header>
   <main class="content">
-    <form>
+    <form id="colorCycleForm">
       <div>
         <label class="label label--center" for="primary">Hexadecimal Color:</label>
-        <input class="field field--center" type="text" name="primaryInput" placeholder="#FFFFFF" />
+        <input class="field field--center" type="text" name="primaryInput" placeholder="#FFFFFF" pattern="[a-fA-F0-9]{6}" required />
       </div>
       <div class="colorFields">
         <div class="color__field">
@@ -45,6 +45,10 @@
             <i class="arrow arrow--right" data-operate="increase" data-color="green"></i>
           </div>
         </div>
+      </div>
+
+      <div class="action">
+        <input type="button" class="action__button button button--center" value="Start" />
       </div>
     </form>
   </main>
